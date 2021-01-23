@@ -1,0 +1,190 @@
+/********************************************
+               RESET CSS
+ *******************************************/
+
+ html, body, div, span, applet, object, iframe,
+ h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+ a, abbr, acronym, address, big, cite, code,
+ del, dfn, em, img, ins, kbd, q, s, samp,
+ small, strike, strong, sub, sup, tt, var,
+ b, u, i, center,
+ dl, dt, dd, ol, ul, li,
+ fieldset, form, label, legend,
+ table, caption, tbody, tfoot, thead, tr, th, td,
+ article, aside, canvas, details, embed,
+ figure, figcaption, footer, header, hgroup,
+ menu, nav, output, ruby, section, summary,
+ time, mark, audio, video {
+   margin: 0;
+   padding: 0;
+   border: 0;
+   font-size: 100%;
+   font: inherit;
+   vertical-align: baseline;
+}
+ /* HTML5 display-role reset for older browsers */
+ article, aside, details, figcaption, figure,
+ footer, header, hgroup, menu, nav, section {
+   display: block;
+}
+ body {
+   line-height: 1;
+}
+ ol, ul {
+   list-style: none;
+}
+ blockquote, q {
+   quotes: none;
+}
+ blockquote:before, blockquote:after,
+ q:before, q:after {
+   content: '';
+   content: none;
+}
+ table {
+   border-collapse: collapse;
+   border-spacing: 0;
+}
+ a{ 
+ text-decoration:none;
+}
+ /*******************************************
+      Custom CSS
+ *******************************************/
+/* Split the navigation across the screen */
+#nav.nav{
+    width: auto;
+    height: 100%;
+    margin: 30px;
+    background-color: grey;
+}
+/* Change the overall color scheme of the navigation，make it more in line with my aesthetic*/
+#nav.nav .nav-link{
+    font-size: 50px;
+    text-align: center;
+    display: inline;
+    cursor: pointer;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 600;
+    line-height: 60px;
+    padding: 0 10px;
+    text-decoration: none;
+    color: white;
+    text-align-last: center;
+    border:1px solid white;
+    text-align-last: center;
+}
+/* Highlight the title */
+#main.main .page-title{
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+/* Change the background color and size */
+#main.main .home{
+    background-color: rosybrown;
+    width: auto;
+    margin: 0px auto;
+}
+/* Change the font style */
+#main.main p{
+    font-family: 'Times New Roman', Times, serif;
+    color:white;
+    font-size:30px;
+}
+/* Change the heading color and font style */
+#about.about .section-title{
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+/* Change the background color */
+#main.main .about{
+    background-color: grey;
+    font-size:30px;
+}
+#contact.contact{
+    background-color: rosybrown;
+}
+#contact.contact .contact-form{
+    background-color: grey;
+    width:80%;
+    margin:0 auto;
+    font-size:20px;
+    color:white;
+}
+/* Change the heading color and font style */
+#contact.contact .section-title{
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+/* Change font style and location */
+#contact.contact p{
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    font-size:30px;
+}
+/* Change the location of footer */
+footer{
+    text-align: center;
+    background:grey;
+    color:white;
+    width:100%;
+}
+/* Breakpoint change */
+@media (min-width:760px){
+    #nav.nav .nav-link{
+       font-size: 60px;
+       margin:50px;
+       padding:12px;
+    }
+    #main.main{
+       width:100%;
+     }
+     #home.home{
+       height:400px;
+    }
+    h1.page-title{
+       font-size: 60px;
+       padding-top:20px;
+    }
+    #home>p{
+       font-size:35px;
+       width:80%;
+       text-align: center;
+       padding-top:30px;
+       padding-left:80px;
+    }
+    #about.about{
+       font-size:35rem;
+       height:400px;
+    }
+    .about>.section-title{
+       font-size:60px;
+       padding:30px 0;
+    }
+    img.about-image{
+       width:30%;
+       height:auto;
+    }
+    #contact.contact{
+       font-size:35rem;
+       height:600px;
+    }
+    #contact>.section-title{
+       font-size:60px;
+       padding: 30px 0;
+    }
+    label.contact-form-label{
+       font-size:30px;
+    }
+    button{
+       font-size:20px;
+       width:200px;
+    }
+    footer{
+       width:100%;
+       margin:0 auto;
+       max-width:1200px;
+       font-size:20px;
+    }
+    
+ }
