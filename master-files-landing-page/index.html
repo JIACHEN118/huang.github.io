@@ -1,0 +1,269 @@
+﻿<!doctype html >
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title></title>
+    <style>
+        *
+        {
+            margin: 0px;/* Clear outer margin  */
+            padding: 0px;/* Clear inner margin  */
+        }
+        body
+        {
+            line-height: 1.3;/* Row height 1.5  */
+            background: #f7f7ff url(images/bg-image/scooter.png) no-repeat center center; /*Defining background*/
+        }
+        .container
+        {
+            width: 100%; /* Defining Width 100% */
+            max-width: 1440px; /* Defining max-width 1440px */
+            margin: 0 auto; /* Define container center*/
+        }
+        .container:after
+        {
+            content: '';
+            clear: both;
+            height: 0px;
+            display: block;
+        }
+        .container h1
+        {
+            font-size: 66px;
+            margin-bottom: 40px;
+        }
+        .container p.lp
+        {
+            font-size: 20px;/*Font size 20 pixels*/
+            color: #6b6b6b;
+        }
+        .logo
+        {
+            margin-bottom: 40px;/* 40px pixels from the bottom margin */
+            margin-top: 20px;/* 20px pixels from the top margin */
+        }
+        .logo img
+        {
+            width: 150px;/* Defining Width 150px */
+        }
+        .col-2
+        {
+            width: 50%;/* Defining Width 50% */
+            float: left;
+        }
+        .col-4
+        {
+            width: 33.33%;/* Defining Width 33.33% */
+            float: left;
+        }
+        .pnone
+        {
+            display: none;
+        }
+        .right
+        {
+            float: right;
+        }
+        .box
+        {
+            border: 1px solid #c2c2c8;
+            padding: 40px;
+            box-shadow: 4px 3px 5px #000;
+            background: #fff;
+            border-radius: 15px;
+        }
+        .box .form, .box .btn
+        {
+            margin: 15px 0px;
+        }
+        .box .btn input
+        {
+            width: 100%;/* Defining Width 100% */
+            border: none;
+            background: #57eeab;
+            text-align: center;
+            color: #000;
+            padding: 5px 0px;
+            border-radius: 5px;
+            font-size: 24px;/*Font size 24 pixels*/
+        }
+        .box .form input[type=text]
+        {
+            background: #f4f4f5;
+            width: 96%;/* Defining Width 96% */
+            border: none;
+            font-size: 16px;/*Font size 16 pixels*/
+            padding: 2%;
+            border-radius: 8px;
+        }
+        .box form h2
+        {
+            margin-bottom: 15px;/* 15 pixels from the bottom margin */
+        }
+        .box form p, .chk
+        {
+            font-size: 12px;/*Font size 12 pixels*/
+        }
+        .box form p a
+        {
+            text-decoration: none;
+            color: #ff8480;
+        }
+        footer
+        {
+            padding: 30px;
+            background: #fffd8c;
+            margin-top: 60px;
+        }
+        footer .right
+        {
+            text-align: right;
+        }
+        
+        footer .left input[type=text]
+        {
+            background: #f7f7ff;
+            border: none;
+            border-radius: 15px;
+            padding: 10px 0px;
+            padding-left: 20px;
+        }
+        footer .left input[type=submit]
+        {
+            background: #ff8480;
+            border: none;
+            border-radius: 15px;
+            padding: 10px 40px;
+            color: #fff;
+        }
+        footer .left .hour
+        {
+            width: 120px;/* Defining Width 120px */
+        }
+        footer .left h2, footer .left p
+        {
+            margin-bottom: 10px;
+        }
+        footer .right a
+        {
+            margin: 0px 20px;
+        } 
+        /*When the screen width is less than 768 pixels*/
+        @media (max-width: 768px)
+        {
+        
+            body
+            {
+                line-height: 1.3;
+                background: #f7f7ff;
+            }
+            .container
+            {
+                width: 90%;/* Defining Width 90% */
+                margin: 0 auto;
+            }
+            .col-2
+            {
+                width: 100%;/* Defining Width 100% */
+            }
+            .col-4
+            {
+                width: 100%;/* Defining Width 100% */
+            }
+        
+            .pnone
+            {
+                display: block;
+                max-width: 100%;
+            }
+        
+            footer form input
+            {
+                margin-bottom: 10px;/* 10 pixels from the bottom margin */
+            }
+            .logo
+            {
+                margin-bottom: 20px; /* 20 pixels from the bottom margin */
+            }
+        }
+    </style>
+</head>
+<body>
+    <!--section Container  -->
+    <div class="container">
+    <!--section logo  -->
+        <div class="logo">
+            <a href="#">
+                <img src="images/logo/logo.png" /></a>
+        </div>
+        <div class="col-4">
+            <h1>
+                Want to be your own boss？</h1>
+            <p class="lp">
+                Start today and make up to $30/hr driving your own vehicle with Dash!</p>
+        </div>
+        <div class="col-4">
+            <img src="images/bg-image/scooter.png" class="pnone" />
+        </div>
+        <div class="col-4 right">
+            <div class="box">
+                <form>
+                <h2>
+                    Apply Now</h2>
+                <p>
+                    Enter your info below to get started.</p>
+                <div class="form">
+                    <input type="text" placeholder="First name" />
+                </div>
+                <div class="form">
+                    <input type="text" placeholder="Last name" />
+                </div>
+                <div class="form">
+                    <input type="text" placeholder="Email address" />
+                </div>
+                <div class="form">
+                    <input type="text" placeholder="Phone  number" />
+                </div>
+                <div class="form chk">
+                    <input id="Checkbox1" type="checkbox" />I agree to dash terms
+                </div>
+                <div class="btn">
+                    <input id="Submit1" type="submit" value="DRIVE WITH US" />
+                </div>
+                <p>
+                    Already applied?<a href="#">Check your application atatus here</a></p>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!--section footer  -->
+    <footer>
+    <div class=" container">
+    <div class="col-2 left">
+    <h2>See how much you can earn with Dash.</h2>
+    <p>
+    how many hours do you want to drive with us tjis week?
+    <!--section form  -->
+    <form>
+    <input class="hour" type="text"  placeholder="hour"  />
+    <input class="city" type="text"  placeholder="city"  />
+
+    <input id="Submit2" type="submit" value="CALCULATE" />
+    
+    </form>
+    
+    </p>
+    </div>
+    <div class="col-2 right">
+    
+    <a href="#"><img src="images/icons/instagram.png" /></a>
+    <a href="#"><img src="images/icons/twitter.png" /></a>
+    <a href="#"><img src="images/icons/facebook.png" /></a>
+    <a href="#"><img src="images/icons/instagram.png" /></a>
+    </div> 
+
+    </div>
+    
+    </footer>
+</body>
+</html>
